@@ -1,0 +1,104 @@
+
+:root {
+    --primary: #4a90e2;
+    --secondary: #f3f4f6;
+    --danger: #e74c3c;
+    --success: #2ecc71;
+    --warning: #f1c40f;
+    --dark: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: var(--dark);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 30px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+
+.img-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-add { background: var(--success); color: white; margin-bottom: 20px; }
+.btn-edit { background: var(--warning); color: #333; font-size: 13px; }
+.btn-delete { background: var(--danger); color: white; font-size: 13px; }
+
+.btn:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+}
